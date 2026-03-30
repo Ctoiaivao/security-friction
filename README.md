@@ -180,6 +180,7 @@ This skill was built in response to [*AI got the blame for the Iran school bombi
 
 ## Version history
 
+- **1.1.0** — Added credential exposure risk trigger: treat visibility as irreversibility
 - **1.0.0** — Initial release
 
 ---
