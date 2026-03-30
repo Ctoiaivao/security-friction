@@ -29,13 +29,13 @@ This skill is not about being cautious. It is about being accurate.
 ```bash
 mkdir -p ~/.claude/skills/security-friction
 curl -o ~/.claude/skills/security-friction/SKILL.md \
-  https://raw.githubusercontent.com/ctoiaivao/security-friction/main/SKILL.md
+  https://raw.githubusercontent.com/Ctoiaivao/security-friction/main/SKILL.md
 ```
 
 Or clone the full repo:
 
 ```bash
-git clone https://github.com/ctoiaivao/security-friction.git ~/.claude/skills/security-friction
+git clone https://github.com/Ctoiaivao/security-friction.git ~/.claude/skills/security-friction
 ```
 
 ---
