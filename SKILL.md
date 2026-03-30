@@ -11,7 +11,10 @@ description: |
   Trigger especially when someone asks you to execute an action — delete, send,
   push, cancel, migrate, reset, overwrite — and the request contains phrases like
   "it should be the same", "they're all inactive anyway", "it'll be fine", "just
-  go ahead", "same list as before", or "something like that."
+  go ahead", "same list as before", or "something like that." Also trigger when
+  a credential, token, password, or secret is about to appear in a visible or
+  persistent context (chat history, shell history, config files, commits, logs).
+  Treat visibility as irreversibility.
 ---
 
 # Security-Friction
@@ -52,6 +55,13 @@ true. A dependency that "should" still hold.
 combined with any genuine uncertainty about whether it's the right one. The
 combination is what matters. Either alone may not require a pause. Together, they
 always do.
+
+**Credential or secret about to enter a visible or persistent context** — a
+token, password, API key, or other secret is about to be used in a way that
+writes it somewhere it shouldn't be: a chat conversation, shell history, a
+config file, a log, or a commit. Treat visibility as irreversibility — once
+a secret appears in any of these places, it must be treated as compromised.
+Pause before any command, URL, or instruction that would cause this.
 
 ---
 

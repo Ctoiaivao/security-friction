@@ -61,6 +61,7 @@ You can also invoke it explicitly:
 | **Circular validation** | A plan that can only measure its own performance; assumptions validated by referencing themselves |
 | **Gap between plan and reality** | The task assumes something that could be checked but hasn't been — a file that "should" exist, a state that "should" be true |
 | **Irreversibility + ambiguity** | An action that's hard or impossible to undo, combined with any genuine uncertainty about whether it's the right one |
+| **Credential exposure risk** | A token, password, or key is about to appear somewhere visible or persistent — a chat session, shell history entry, config file, log, or commit. Treat visibility as irreversibility: once a secret appears in any of these places, it must be treated as compromised |
 
 The combination of irreversibility and ambiguity is what matters. Either alone may not require a pause. Together, they always do.
 
@@ -125,6 +126,13 @@ Claude will not offer to proceed anyway. The pause is complete. You decide what 
 > Once deployed, rolling back will require a hotfix process and could affect live users.
 >
 > Do you want to review the staging results first?
+
+**Credential exposure risk:**
+> ⚠ Friction: You're about to embed a token in a URL that will appear in this conversation.
+>
+> Once visible here, the token is compromised regardless of whether the command succeeds.
+>
+> Should we use a method that keeps the token out of the conversation — like running this in a private terminal where git can prompt interactively?
 
 ---
 
